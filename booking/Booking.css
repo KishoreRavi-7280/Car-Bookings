@@ -1,0 +1,157 @@
+/* Base */
+.body3 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #030303);
+  color: #fff;
+  min-height: 10\0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.bmw-container {
+  width: 95%;
+  max-width: 1100px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  background: rgba(0,0,0,0.4);
+  padding: 40px;
+}
+
+/* Form */
+.bmw-form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* === 2 Column Grid === */
+.bmw-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+  color: #151616;
+  transition: box-shadow 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #00e6e6;
+}
+
+/* Dropdowns */
+.bmwdrpd {
+  position: relative;
+  margin: 15px 0;
+}
+
+.slt {
+  background-color: #2a2f3b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slt:hover {
+  background: #323741;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.bmwmnu, .bmwmnu2 {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 3.3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 99;
+}
+
+.bmwmnu li, .bmwmnu2 li {
+  margin: 0.3em 0;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.bmwmnu li:hover, .bmwmnu2 li:hover {
+  background: #2a2d35;
+}
+
+.bmwmnu-open, .bmwmnu2-open {
+  display: block !important;
+  opacity: 1 !important;
+  margin-top: 10px;
+}
+
+/* Button */
+.bmw-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.bmw-btn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .bmw-grid {
+    grid-template-columns: 1fr;
+  }
+}
