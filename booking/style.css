@@ -62,3 +62,84 @@ button:hover {
 } 
 
 
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bmw-container {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Medium devices (tablets, up to 900px) */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .bmw-container {
+    padding: 25px;
+    margin: 40px 20px;
+  }
+
+  button {
+    font-size: 17px;
+    padding: 14px;
+  }
+}
+
+/* Large devices (desktops, 901px to 1199px) */
+@media (min-width: 901px) and (max-width: 1199px) {
+  .row {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .bmw-container {
+    padding: 30px;
+    margin: 50px auto;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+/* Extra large devices (1200px and above) */
+@media (min-width: 1200px) {
+  .row {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .bmw-container {
+    padding: 40px;
+    margin: 80px auto;
+    max-width: 1200px; /* Limit width for better readability */
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  input, select {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
